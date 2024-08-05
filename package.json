@@ -1,0 +1,21 @@
+{
+  "name": "vega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^22.1.0",
+    "better-sqlite3": "^11.1.2",
+    "body-parser": "^1.20.2",
+    "electron": "^31.3.1",
+    "events": "^3.3.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "quick.db": "^9.1.7"
+  },
+  "scripts": {
+    "start": "electron ./src/index.js",
+    "rebuild": "electron-rebuild -f -w better-sqlite3"
+  }
+}
